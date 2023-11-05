@@ -1,7 +1,6 @@
 //SPDX-License-Identifier: UNLICENSED
 pragma solidity >= 0.7.0 <0.9.0;
 contract MarksManagmtSys{
-
     struct StudentStruct{
         uint ID;
         string fName;
@@ -12,7 +11,7 @@ contract MarksManagmtSys{
     
     uint public stdCount = 0;
     event log(string, uint);
-    StudentStruct[] stdRecords;
+    StudentStruct[] public stdRecords;
     
     constructor() {
         owner=msg.sender;
